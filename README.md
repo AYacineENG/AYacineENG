@@ -1,16 +1,110 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yacine Annad | Embedded Systems Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glow { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee; }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+  </style>
+</head>
+<body class="bg-black text-slate-200">
 
-<!--
-**AYacineENG/AYacineENG** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-5xl md:text-6xl font-bold glow">Yacine Annad</h1>
+  <p id="typing" class="mt-4 text-xl text-cyan-400"></p>
 
-Here are some ideas to get you started:
+  <div class="mt-8 flex gap-4">
+    <a href="#projects" class="bg-cyan-400 px-6 py-3 rounded-xl text-black font-semibold">View Projects</a>
+    <a href="Yacine_Annad_CV.pdf" class="border border-cyan-400 px-6 py-3 rounded-xl">Download CV</a>
+  </div>
+</section>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- ABOUT -->
+<section class="py-20 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-cyan-400">About</h2>
+  <p class="text-slate-400">
+    Student in instrumentation, automatic systems, and embedded systems, specialized in electronic systems design and embedded programming.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="py-20 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-cyan-400">Skills</h2>
+  <div class="space-y-4">
+    <div>
+      <p>C / Embedded C</p>
+      <div class="w-full bg-slate-800 h-2 rounded"><div class="bg-cyan-400 h-2 w-4/5"></div></div>
+    </div>
+    <div>
+      <p>Microcontrollers (AVR)</p>
+      <div class="w-full bg-slate-800 h-2 rounded"><div class="bg-cyan-400 h-2 w-4/5"></div></div>
+    </div>
+    <div>
+      <p>Electronics Design</p>
+      <div class="w-full bg-slate-800 h-2 rounded"><div class="bg-cyan-400 h-2 w-3/4"></div></div>
+    </div>
+    <div>
+      <p>I2C / SPI Communication</p>
+      <div class="w-full bg-slate-800 h-2 rounded"><div class="bg-cyan-400 h-2 w-3/4"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-10 text-cyan-400">Projects</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="card bg-slate-900 p-4 rounded-2xl">
+      <img src="images/thermo.jpg" class="rounded-xl mb-4" alt="project">
+      <h3 class="text-xl font-semibold">Non-Contact Thermometer</h3>
+      <p class="text-slate-400">ATmega328P + MLX90614 + OLED</p>
+      <a href="https://github.com/AYacineENG/non-contact-thermometer" class="text-cyan-400">View →</a>
+    </div>
+
+    <div class="card bg-slate-900 p-4 rounded-2xl">
+      <img src="images/led.jpg" class="rounded-xl mb-4" alt="project">
+      <h3 class="text-xl font-semibold">LED Heart</h3>
+      <p class="text-slate-400">ATtiny85 + Shift Registers</p>
+      <a href="https://github.com/AYacineENG/led-heart" class="text-cyan-400">View →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="py-20 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-cyan-400">Education</h2>
+  <p class="text-slate-400">Instrumentation & Embedded Systems Student</p>
+</section>
+
+<!-- CONTACT -->
+<section class="py-20 px-6 max-w-3xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-cyan-400 text-center">Contact</h2>
+  <form class="space-y-4">
+    <input type="text" placeholder="Name" class="w-full p-3 bg-slate-900 border border-slate-700 rounded">
+    <input type="email" placeholder="Email" class="w-full p-3 bg-slate-900 border border-slate-700 rounded">
+    <textarea placeholder="Message" class="w-full p-3 bg-slate-900 border border-slate-700 rounded"></textarea>
+    <button class="w-full bg-cyan-400 text-black p-3 rounded">Send</button>
+  </form>
+</section>
+
+<script>
+  const text = "Embedded Systems | AVR | Electronics";
+  let i = 0;
+  function typing() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing, 50);
+    }
+  }
+  typing();
+</script>
+
+</body>
+</html>
